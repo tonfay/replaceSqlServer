@@ -1,0 +1,14 @@
+server:
+  port: 7777
+  context-path: /
+  tomcat:
+    max-threads: 800
+    accept-count: 2000
+    min-spare-threads: 10
+    
+spring:
+  profiles:
+    active: prod  ##设置logback-spring中日志显示
+  application:
+    name: replaceSqlServer
+
